@@ -6,9 +6,9 @@ body{
   background-color: rgb(219, 218, 218);
 }
 .App {
-
 }
 .header{
+  
   background-color: greenyellow;
   padding: 10px;
   display: flex;
@@ -18,6 +18,7 @@ body{
   padding-left: 100px;
 }
 #CreateThread{
+  
   padding-right: 100px;
    margin-left: auto;
    font-size: 20px;
@@ -34,6 +35,7 @@ td{
   font-size: 20px;
 }
 a{
+  text-decoration: none;
   padding-left: 10px;
 }
 h2{
@@ -49,6 +51,7 @@ h2{
   margin-top: 10px;
   background-color: white;
   width: 600px;
+  word-wrap: break-word;
   height: 100px;
   padding: 10px;
 }

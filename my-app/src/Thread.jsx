@@ -7,7 +7,6 @@ export function Thread(){
   const [searchParams] = useSearchParams();
   const threadId = searchParams.get("id");
   const thread_title = searchParams.get("title");
-  console.log(thread_title);
   const [message,setmessage] = useState([""]); 
   
   fetch("https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads/"+threadId+"/posts")
@@ -58,7 +57,8 @@ export function Thread(){
       </div>
       <div className="Form_area">
         <form id="fetchForm">
-          <textarea id="messge_form" rows="7" cols="50" placeholder="投稿しよう！"/><br></br>
+          <textarea id="messge_form" rows="7" cols="50" 
+          placeholder="投稿しよう！" maxLength="200"/><br></br>
           <input type="button" className="button" name="title" value="投稿" onClick={postFetch}/>
         </form>
       </div>

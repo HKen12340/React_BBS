@@ -25,7 +25,7 @@ export function New(){
       <form className="Create_Thread">
       <h1>スレッドを作る</h1>
       <br />
-        <input type="text" id="thread_name"/>
+        <input type="text" id="thread_name" maxlength="30"/>
         <input type="button" className="button" name="title" value="スレッド作成" onClick={postFetch}/>
       </form>
     </div>
